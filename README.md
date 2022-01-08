@@ -21,6 +21,13 @@ und führe aus. Was passiert?
 ### Spiele!
 
 - Ändere den Code und begrüße dich selbst mit Vor- und Nachnamen!
+- Versuchen nun folgende Katze auf den Bildschirm zu schreiben:
+
+```
+ /\_/\
+( o.o )
+ > ^ <
+```
 
 ## Wir lernen Variablen
 
