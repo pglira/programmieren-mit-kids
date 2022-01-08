@@ -54,7 +54,7 @@ Merke: Damit das funktioniert, muss vor dem ersten Anführungszeichen ein ``f`` 
 - Ändere nun die Variablenwerte, zum Beispiel könnte ``a`` den Wert 10 haben und ``b`` den Wert 15.
 - Kannst du die beiden Variablen auch voneinander abziehen (Subtraktion)?
 
-## Wir lernen "Schleifen"
+## Wir lernen etwas mehrfach zu wiederholen
 
 ### Lerne!
 
@@ -127,3 +127,29 @@ Merke: ``if`` bedeuted ``wenn`` und ``else`` bedeuted ``sonst``.
 ### Spiele!
 
 - Lass dir nun eine eigene Frage einfallen und lass diese von deinem Bruder oder deiner Schwester beantworten. Aber bitte nicht zu schwierig!
+
+## Wir lernen etwas unendlich oft zu wiederholen
+
+### Lerne!
+
+Oben haben wir gelernt etwas x mal zu wiederholen, zum Beispiel so:
+
+```python
+for i in range(3):
+    print("Hallo du!")
+```
+
+Wie können wir aber etwas unendlich oft wiederholen? Das geht so:
+
+```python
+while True:
+    print("Das wird nun immer wieder auf den Bildschirm geschrieben!"
+```
+
+Merke: ``while`` bedeutet ``während``, ``True`` bedeutet ``wahr``.
+
+Wann braucht man das? Zum Beispiel wenn ein Programm laufen soll bis der Benutzer es beendet. Den Code hier kannst du übrigens durch Drücken von ``ctrl+c`` abbrechen.
+
+### Spiele!
+
+- Schaffst du es eine Variable ``i`` innerhalb der unendlichen Schleife immer um 1 zu erhöhen? Gib dabei die Variable auch jedes Mal auf dem Bildschirm aus.
