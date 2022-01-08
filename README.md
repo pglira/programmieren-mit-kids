@@ -88,7 +88,7 @@ Merke: Mit Schleifen können wir etwas öfter wiederholen. Hier wird der Text ``
 Wir können eine Eingabe vom Benutzer unseres Programmes verlangen und diese in eine Variable speicher. Das geht so:
 
 ```python
-jahre = input("Wie alt bist du:")
+jahre = input("Wie alt bist du?")
 ```
 
 Nun ist das Alter in der Variable ``alter`` gespeichert.
@@ -96,7 +96,7 @@ Nun ist das Alter in der Variable ``alter`` gespeichert.
 Dieses können wir jetzt auf den Bildschirm schreiben:
 
 ```python
-print(f"Du bist {jahre} alt!")
+print(f"Du bist {jahre} Jahre alt!")
 ```
 
 ### Spiele!
@@ -110,16 +110,16 @@ print(f"Du bist {jahre} alt!")
 Wir haben gerade gelernt wie man den Benutzer etwas frägt:
 
 ```python
-antwort = input("Wieviele Bundesländer gibt es in Österreich?")
+antwort = input("Wie viele Mitglieder hat die Band Deine Freunde?")
 ```
 
 Nun kannst du überprüfen ob die Antwort richtig ist:
 
 ```python
-if antwort == 9:
-    print("Das ist richtig!")
+if antwort == "3":
+    print("Das ist richtig! Sie heißen Flo, Pauli und Lukas.")
 else:
-    print("Das ist falsch!")
+    print("Das ist falsch! Kennst du denn diese Band gar nicht?")
 ```
 
 Merke: ``if`` bedeuted ``wenn`` und ``else`` bedeuted ``sonst``.
