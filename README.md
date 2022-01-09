@@ -88,7 +88,7 @@ Merke: Mit Schleifen können wir etwas öfter wiederholen. Hier wird der Text ``
 
 - Kannst du das auch 100x schreiben lassen? Was musst du dazu ändern? Probiere es aus!
 
-## Wir kann man den Benutzer etwas fragen?
+## Wie kann man den Benutzer etwas fragen?
 
 ### Lerne!
 
