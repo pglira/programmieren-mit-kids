@@ -150,7 +150,7 @@ Wie können wir aber etwas unendlich oft wiederholen? Das geht so:
 
 ```python
 while True:
-    print("Das wird nun immer wieder auf den Bildschirm geschrieben!"
+    print("Das wird nun immer wieder auf den Bildschirm geschrieben!")
 ```
 
 Merke: ``while`` bedeutet ``während``, ``True`` bedeutet ``wahr``.
