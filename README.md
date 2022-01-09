@@ -160,3 +160,12 @@ Wann braucht man das? Zum Beispiel wenn ein Programm laufen soll bis der Benutze
 ### Spiele!
 
 - Schaffst du es eine Variable ``i`` innerhalb der unendlichen Schleife immer um 1 zu erhöhen? Gib dabei die Variable auch jedes Mal auf dem Bildschirm aus.
+
+## Links
+
+Nachfolgend einige Links zu interessanten Projekten die auch als Inpirationsquelle für eigene Projekte dienen können.
+
+### Raspberry Pi - Sense HAT
+
+- https://github.com/martinohanlon/AstroPiSnake
+- https://github.com/AndrewCRichards/TetriPiSense
