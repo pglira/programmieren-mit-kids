@@ -1,14 +1,16 @@
 # Spaßiges Programmieren mit Kids
 
-## Programmierumbebung
+## Python
+
+### Programmierumbebung
 
 Gehe im Webbrowser zu ``https://www.online-python.com``. Hier können wir in der Sprache ``Python`` programmieren.
 
 Lass uns beginnen!
 
-## Wir lernen Text zu schreiben
+### Wir lernen Text zu schreiben
 
-### Lerne!
+#### Lerne!
 
 Wir können Text auf den Bildschirm schreiben. Schreibe:
 
@@ -18,7 +20,7 @@ print("Hallo Welt!")
 
 und führe aus. Was passiert?
 
-### Spiele!
+#### Spiele!
 
 - Ändere den Code und begrüße dich selbst mit Vor- und Nachnamen!
 - Versuchen nun folgende Katze auf den Bildschirm zu schreiben:
@@ -29,9 +31,9 @@ und führe aus. Was passiert?
  > ^ <
 ```
 
-## Wir lernen Variablen
+### Wir lernen Variablen
 
-### Lerne!
+#### Lerne!
 
 Wir können in Variablen etwas speichern, zum Beispiel Zahlen:
 
@@ -56,14 +58,14 @@ Dabei musst du Variablen in geschwungenen Klammern angeben.
 
 Merke: Damit das funktioniert, muss vor dem ersten Anführungszeichen ein ``f`` stehen.
 
-### Spiele!
+#### Spiele!
 
 - Ändere nun die Variablenwerte, zum Beispiel könnte ``a`` den Wert 10 haben und ``b`` den Wert 15.
 - Kannst du die beiden Variablen auch voneinander abziehen (Subtraktion)?
 
-## Wir lernen etwas mehrfach zu wiederholen
+### Wir lernen etwas mehrfach zu wiederholen
 
-### Lerne!
+#### Lerne!
 
 Schreibe 3 mal den gleichen Text:
 
@@ -84,13 +86,13 @@ for i in range(3):
 
 Merke: Mit Schleifen können wir etwas öfter wiederholen. Hier wird der Text ``Hallo du!`` drei mal geschrieben.
 
-### Spiele!
+#### Spiele!
 
 - Kannst du das auch 100x schreiben lassen? Was musst du dazu ändern? Probiere es aus!
 
-## Wie kann man den Benutzer etwas fragen?
+### Wie kann man den Benutzer etwas fragen?
 
-### Lerne!
+#### Lerne!
 
 Wir können eine Eingabe vom Benutzer unseres Programmes verlangen und diese in eine Variable speicher. Das geht so:
 
@@ -106,13 +108,13 @@ Dieses können wir jetzt auf den Bildschirm schreiben:
 print(f"Du bist {jahre} Jahre alt!")
 ```
 
-### Spiele!
+#### Spiele!
 
 - Frage den Benutzer etwas lustiges und schreibe einen Satz mit dieser Eingabe 10x auf den Bildschirm.
 
-## Wir lernen eine Eingabe zu überprüfen
+### Wir lernen eine Eingabe zu überprüfen
 
-### Lerne!
+#### Lerne!
 
 Wir haben gerade gelernt wie man den Benutzer etwas frägt:
 
@@ -131,13 +133,13 @@ else:
 
 Merke: ``if`` bedeuted ``wenn`` und ``else`` bedeuted ``sonst``.
 
-### Spiele!
+#### Spiele!
 
 - Lass dir nun eine eigene Frage einfallen und lass diese von deinem Bruder oder deiner Schwester beantworten. Aber bitte nicht zu schwierig!
 
 ## Wir lernen etwas unendlich oft zu wiederholen
 
-### Lerne!
+#### Lerne!
 
 Oben haben wir gelernt etwas x mal zu wiederholen, zum Beispiel so:
 
@@ -157,7 +159,7 @@ Merke: ``while`` bedeutet ``während``, ``True`` bedeutet ``wahr``.
 
 Wann braucht man das? Zum Beispiel wenn ein Programm laufen soll bis der Benutzer es beendet. Den Code hier kannst du übrigens durch Drücken von ``ctrl+c`` abbrechen.
 
-### Spiele!
+#### Spiele!
 
 - Schaffst du es eine Variable ``i`` innerhalb der unendlichen Schleife immer um 1 zu erhöhen? Gib dabei die Variable auch jedes Mal auf dem Bildschirm aus.
 
@@ -165,7 +167,7 @@ Wann braucht man das? Zum Beispiel wenn ein Programm laufen soll bis der Benutze
 
 ### Wir schreiben etwas
 
-### Lerne
+#### Lerne
 
 Wir müssen zunächst dafür sorgen, dass wir mit dem Sense HAT kommunizieren ("sprechen") können. Dafür müssen immer die folgenden zwei Zeilen ganz oben stehen:
 
@@ -180,11 +182,35 @@ Nun können wir auf dem Sense HAT Text ausgeben:
 sense.show_message("Halli Hallo!")
 ```
 
-### Spiele
+#### Spiele
 
 - Ändere den Text auf etwas aufregenderes.
 
-### Referenzen
+### Wir ändern dir Form des Textes
+
+#### Lerne
+
+Wir können die Geschwindigkeit und die Farbe des Textes ändern:
+
+```python
+yellow = (255, 255, 0) # Gelb
+blue = (0, 0, 255) # Blau
+sense.show_message("Halli Hallo!", text_color=yellow, back_color = blue, scroll_speed = 0.1)
+```
+
+Du hast hierbei die Funktion ``show_messages`` mit drei zusätzlichen Parametern aufgerufen:
+
+- ``text_color``: Textfarbe
+- ``back_color``: Hintergrundfarbe
+- ``scroll_speed``: Die Geschwindigkeit des Textes
+
+Farben werden mit 3 Werten angeben: Rot, Grün und Blau. Jede dieser drei Farben hat einen Wert zwischen 0 und 255. Die finale Farbe ergibt sich durch "Mischen" dieser drei Farben.
+
+#### Spiele
+
+- Versuche einen roten Text auf blauem Hintergrund mit sehr hoher Geschwindigkeit zu schreiben.
+
+#### Referenzen
 
 - https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat
 - https://github.com/martinohanlon/AstroPiSnake
