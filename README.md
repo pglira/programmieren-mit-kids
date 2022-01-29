@@ -253,6 +253,45 @@ sense.show_letter("b")
 
 - Kannst du die Farben auch abwechselnd in zwei verschiedenen Farben schreiben? Du kannst diese Internetseite öffnen um Farben auszuwählen: https://www.w3schools.com/colors/colors_picker.asp
 
+
+### Wir zeichnen ein Pixelbild
+
+#### Lerne
+
+Mit diesem Skript zeichnen wir ein Bild auf dem Sense HAT. Schau dir zur Erklärung die Kommentare an:
+
+```python
+from sense_hat import SenseHat
+
+sense = SenseHat()
+
+# Hier definieren wir zwei Farben
+g = (0, 255, 0) # Grün
+b = (0, 0, 0) # Scharz
+
+# Jetzt definieren wir hier ein Bild
+pixel_image = [
+    g, g, g, g, g, g, g, g,
+    g, g, g, g, g, g, g, g,
+    g, b, b, g, g, b, b, g,
+    g, b, b, g, g, b, b, g,
+    g, g, g, b, b, g, g, g,
+    g, g, b, b, b, b, g, g,
+    g, g, b, b, b, b, g, g,
+    g, g, b, g, g, b, g, g
+]
+
+# Das Bild können wir nun mit diesem Befehl anzeigen
+sense.set_pixels(pixel_image)
+```
+
+Was ist das denn? Etwa ein **creeper**? :-)
+
+#### Spiele
+
+- Ändere das Bild, z.B. zu einem Muster.
+
+
 #### Referenzen
 
 - https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat
