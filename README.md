@@ -290,7 +290,33 @@ Was ist das denn? Etwa ein **creeper**? :-)
 #### Spiele
 
 - Ändere das Bild, z.B. zu einem Muster.
+- Ändere dein gesamtes Skript auf folgenden Text (du musst diesen nicht abschreiben sondern kannst ihn einfach von hier kopieren):
 
+```python
+from sense_hat import SenseHat
+
+sense = SenseHat()
+
+B = (102, 51, 0)
+b = (0, 0, 255)
+S = (205,133,63)
+W = (255, 255, 255)
+
+pixel_image = [
+    B, B, B, B, B, B, B, B,
+    B, B, B, B, B, B, B, B,
+    B, S, S, S, S, S, S, B,
+    S, S, S, S, S, S, S, S,
+    S, W, b, S, S, b, W, S,
+    S, S, S, B, B, S, S, S,
+    S, S, B, S, S, B, S, S,
+    S, S, B, B, B, B, S, S
+]
+
+sense.set_pixels(pixel_image)
+```
+
+Führe nun das Skript aus. Kennst du diesen Kerl von irgendwo? Verstehst du das Programm?
 
 #### Referenzen
 
