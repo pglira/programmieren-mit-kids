@@ -195,13 +195,13 @@ Wir können die Geschwindigkeit und die Farbe des Textes ändern:
 ```python
 yellow = (255, 255, 0) # Gelb
 blue = (0, 0, 255) # Blau
-sense.show_message("Halli Hallo!", text_color=yellow, back_color = blue, scroll_speed = 0.1)
+sense.show_message("Halli Hallo!", text_colou^r=yellow, back_colour = blue, scroll_speed = 0.1)
 ```
 
 Du hast hierbei die Funktion ``show_messages`` mit drei zusätzlichen Parametern aufgerufen:
 
-- ``text_color``: Textfarbe
-- ``back_color``: Hintergrundfarbe
+- ``text_colour``: Textfarbe
+- ``back_colour``: Hintergrundfarbe
 - ``scroll_speed``: Die Geschwindigkeit des Textes
 
 Farben werden mit 3 Werten angeben: Rot, Grün und Blau. Jede dieser drei Farben hat einen Wert zwischen 0 und 255. Die finale Farbe ergibt sich durch "Mischen" dieser drei Farben.
@@ -209,6 +209,49 @@ Farben werden mit 3 Werten angeben: Rot, Grün und Blau. Jede dieser drei Farben
 #### Spiele
 
 - Versuche einen roten Text auf blauem Hintergrund mit sehr hoher Geschwindigkeit zu schreiben.
+
+### Wir lernen einen Text unendlich oft zu schreiben
+
+#### Lerne
+
+Du kannst dich sicher noch erinnern wie man eine unendliche Schleife erzeugt. Richtig! So:
+
+```python
+while True:
+    sense.show_message("Bis in alle Ewigkeit!")
+```
+
+#### Spiele
+
+- Welche Nachricht sollte jemand der dein Zimmer betritt lesen? Ändere den Text sowie gegebenenfalls auch seine Form (Farbe und Geschwindigkeit).
+
+### Wir lernen nun einzelne Buchstaben nacheinander zu schreiben
+
+#### Lerne
+
+Einen einzelnen Buchstaben kannst du am Sense HAT so schreiben:
+
+```python
+sense.show_letter("J")
+```
+
+Du kannst nun mehrere Buchstaben hintereinander ausgeben, allerdings solltest du dazwischen immer eine kleine Pause einbauen:
+
+```python
+sense.show_letter("J")
+sleep(1) # das Programm macht hier 1 Sekunde Pause
+sense.show_letter("a")
+sleep(1)
+sense.show_letter("k")
+sleep(1)
+sense.show_letter("o")
+sleep(1)
+sense.show_letter("b")
+```
+
+#### Spiele
+
+- Kannst du die Farben auch abwechselnd in zwei verschiedenen Farben schreiben? Du kannst diese Internetseite öffnen um Farben auszuwählen: https://www.w3schools.com/colors/colors_picker.asp
 
 #### Referenzen
 
