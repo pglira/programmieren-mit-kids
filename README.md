@@ -161,11 +161,37 @@ Wann braucht man das? Zum Beispiel wenn ein Programm laufen soll bis der Benutze
 
 - Schaffst du es eine Variable ``i`` innerhalb der unendlichen Schleife immer um 1 zu erhöhen? Gib dabei die Variable auch jedes Mal auf dem Bildschirm aus.
 
+## Raspberry Pi - Sense HAT
+
+### Wir schreiben etwas
+
+### Lerne
+
+Wir müssen zunächst dafür sorgen, dass wir mit dem Sense HAT kommunizieren ("sprechen") können. Dafür müssen immer die folgenden zwei Zeilen ganz oben stehen:
+
+```python
+from sense_hat import SenseHat
+sense = SenseHat()
+```
+
+Nun können wir auf dem Sense HAT Text ausgeben:
+
+```python
+sense.show_message("Halli Hallo!")
+```
+
+### Spiele
+
+- Ändere den Text auf etwas aufregenderes.
+
+### Referenzen
+
+- https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat
+- https://github.com/martinohanlon/AstroPiSnake
+- https://github.com/AndrewCRichards/TetriPiSense
+- https://nerdyteachers.com/PICO-8/
+
 ## Links
 
 Nachfolgend einige Links zu interessanten Projekten die auch als Inpirationsquelle für eigene Projekte dienen können.
 
-### Raspberry Pi - Sense HAT
-
-- https://github.com/martinohanlon/AstroPiSnake
-- https://github.com/AndrewCRichards/TetriPiSense
